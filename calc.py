@@ -13,8 +13,7 @@ import sys
 # a -- addend
 # b -- augend
 def add(a, b):
-    # TODO -- implement addition here
-    return 0
+    return a + b
 
 # Subtract function
 # a -- minuend
