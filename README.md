@@ -68,9 +68,19 @@ Now it is time to implement. Follow these instructions carefully.
 
 2. Implement the functions that do subtraction, multiplication, and division.
 
-    > __Partner 1__: Implement __*sub(a, b)*__ and __*mult(a, b)*__.
+    > __Partner 1__:
 
-    > __Partner 2__: Implement __*mult(a, b)*__ and __*div(a, b)*__.
+        * Implement __*sub(a, b)*__ and __*mult(a, b)*__.
+
+        * For multiplication, you must use the add operator (+) and a for loop.
+          (*Hint*: in Python, `for i in range(10)` would be the same as
+          `for (int i = 0; i < 10; i++) {` in Java*)
+
+    > __Partner 2__:
+
+        * Implement __*mult(a, b)*__ and __*div(a, b)*__.
+
+        * For multiplication, you may use the multiply operator (*)
 
     > Notice that you will both be implementing __*mult(a, b)*__.
 
@@ -120,6 +130,6 @@ calculator CLI.
 
 ### Grading
 
-Show your git log to your TA
+Run `$ git log -3` and show it to your TA
 
 ### Bonus: Setting up SSH keys
