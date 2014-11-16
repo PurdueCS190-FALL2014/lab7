@@ -53,7 +53,7 @@ Make sure that the HTTPS protocol is selected *(Bonus: See end of lab for instru
 
 3. Create and navigate to a new directory called `cs190/`
     
-```
+```bash
 mkdir cs190/
 cd cs190/
 ```
@@ -65,10 +65,10 @@ cd cs190/
 When the repository is cloned, the `origin` remote, is automatically created as the the location you cloned
 from. Run the command `$ git remote -v`. You get output that looks something like:
 
-    ```bash
-    origin  https://github.com/<username>/lab7.git (fetch)
-    origin  https://github.com/<username>/lab7.git (push)
-    ```
+```bash
+origin  https://github.com/<username>/lab7.git (fetch)
+origin  https://github.com/<username>/lab7.git (push)
+```
 
 ### Run the Script
 
