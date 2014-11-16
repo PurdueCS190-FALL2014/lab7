@@ -53,10 +53,10 @@ Make sure that the HTTPS protocol is selected *(Bonus: See end of lab for instru
 
 3. Create and navigate to a new directory called `cs190/`
     
-    ```bash
-    mkdir cs190/
-    cd cs190/
-    ```
+```bash
+mkdir cs190/
+cd cs190/
+```
 
 4. Run the command `$ git clone <clone URL>` pasting in the URL you just copied
 
