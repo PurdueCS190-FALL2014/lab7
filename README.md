@@ -51,9 +51,24 @@ Make sure that the HTTPS protocol is selected *(Bonus: See end of lab for instru
 
 2. Navigate to your home directory
 
-3. Run the command `$ git clone <clone URL>` pasting in the URL you just copied
+3. Create and navigate to a new directory called `cs190/`
+    
+    ```bash
+    mkdir cs190/
+    cd cs190/
+    ```
 
-4. Navigate into the repository
+4. Run the command `$ git clone <clone URL>` pasting in the URL you just copied
+
+5. Navigate into the repository
+
+When the repository is cloned, the `origin` remote, is automatically created as the the location you cloned
+from. Run the command `$ git remote -v`. You get output that looks something like:
+
+    ```bash
+    origin  https://github.com/<username>/lab7.git (fetch)
+    origin  https://github.com/<username>/lab7.git (push)
+    ```
 
 ### Run the Script
 
@@ -73,8 +88,25 @@ Now it is time to implement. Follow these instructions carefully.
     * Implement __*sub(a, b)*__ and __*mult(a, b)*__.
 
     * For multiplication, you must use the add operator (+) and a for loop.
-      (*Hint*: in Python, `for i in range(10):` would be the same as
-      `for (int i = 0; i < 10; i++) {` in Java*)
+
+      *Hint*: in Java you may implement this
+        
+        ```Java
+        int mult(int a, int b) {
+            int result = 0;
+            for (var i = 0; i < a; i++) {
+                result += b;
+            }
+            return result;
+        }
+        ```
+
+      In Python, to iterate *n* times, you can do
+
+        ```Python
+        for i in range(n):
+            print i
+        ```
 
     > __Partner 2__:
 
