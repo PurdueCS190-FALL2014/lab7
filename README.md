@@ -16,7 +16,7 @@ for this is in `calc.py` of this repo.
 
 This command sets your default editor (just for today's lab) to be pluma for merge messages.
 
-```
+```bash
 export EDITOR="pluma"
 ```
 > This only lasts as long as the terminal window you ran it within. As soon as you close the window, this setting is lost.
@@ -53,7 +53,7 @@ Make sure that the HTTPS protocol is selected *(Bonus: See end of lab for instru
 
 3. Create and navigate to a new directory called `cs190/`
     
-```bash
+```
 mkdir cs190/
 cd cs190/
 ```
