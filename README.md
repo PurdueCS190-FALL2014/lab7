@@ -186,3 +186,14 @@ Now your all set! If you want to contribute to the project you have the knowledg
 * Show your TA the open source project that you forked.
 
 ### Bonus: Setting up SSH keys
+
+You may have noticed that every time you pull or push to Github, you have to enter your username and password. This is because
+you are using the HTTPS protocol to connect to Github as a remote. This has a few advantages:
+
+* It's easier and faster to set up
+* It will still work on strict firewalls and proxies such as those restricting all ports but port 80
+
+The downside is that you don't want to have to enter your credentials everytime you push and pull. There is another way. You
+can set up the remote to use SSH instead of HTTPS. SSH uses RSA encryption which you can set up to be passwordless using 
+public keys. There is a great tutorial by Github on how to set up and use this method [here](https://help.github.com/articles/generating-ssh-keys/).
+Note that you will need to add an SSH key for every different machine you want to clone on.
