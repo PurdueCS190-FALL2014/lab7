@@ -160,8 +160,29 @@ This is because both of you implemented the __*mult(a, b)*__ function. Let's fix
 Now both of you should be able to run `$ python calc.py` on your separate computers and have a fully functioning
 calculator CLI.
 
+### Participating in open source
+
+Open source projects are a great way to get experience in the computer science community. Not only are the free and fun to work on,
+but contributions to open source are serious resume items that companies will love to see. Github is one of the biggest open source
+hosting platforms out there.
+
+When contributing to open source projects, you have to fork the repository. This gives you a copy of the repository on your own
+account where you have the permissions to change things. If you create a feature that you think is worth adding to the main project,
+you can submit a pull request and the maintainers of the project can merge in your changes. Lots more information on contributing
+to open source can be found [here](https://guides.github.com/activities/contributing-to-open-source/).
+
+1. Find an open source project on Github that interests you. Some good ideas [here](https://github.com/explore)
+
+2. Fork the repository (the same way you did earlier in the lab)
+
+3. Clone this repository to your machine
+
+Now your all set! If you want to contribute to this project you have the knowledge and tools to do so.
+
 ### Grading
 
-Run `$ git log -3` and show it to your TA
+* Run `$ git log -3` and show it to your TA
+
+* Show your TA the open source project that you forked.
 
 ### Bonus: Setting up SSH keys
