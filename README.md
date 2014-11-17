@@ -162,7 +162,7 @@ calculator CLI.
 
 ### Participating in open source
 
-Open source projects are a great way to get experience in the computer science community. Not only are the free and fun to work on,
+Open source projects are a great way to get experience in the computer science community. Not only are they free and fun to work on,
 but contributions to open source are serious resume items that companies will love to see. Github is one of the biggest open source
 hosting platforms out there.
 
@@ -175,9 +175,9 @@ to open source can be found [here](https://guides.github.com/activities/contribu
 
 2. Fork the repository (the same way you did earlier in the lab)
 
-3. Clone this repository to your machine
+3. Clone the forked repository to your machine
 
-Now your all set! If you want to contribute to this project you have the knowledge and tools to do so.
+Now your all set! If you want to contribute to the project you have the knowledge and tools to do so.
 
 ### Grading
 
