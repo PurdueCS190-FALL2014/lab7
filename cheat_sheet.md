@@ -82,6 +82,67 @@ This is a reference guide for the git commands that we've gone over in lecture a
   git rm --cached <filename>
   ```
 
+## Working with git remotes
+
+1. To view all the remotes connected to the repository
+
+  ```bash
+  git remote -v
+  ```
+
+2. To clone a repository
+
+  ```bash
+  git clone <repository URL>
+  ```
+
+3. To pull from a remote repository
+
+  ```bash
+  git pull <remote> <branch>
+
+  # Example:
+  git pull origin master
+  ```
+
+4. To push to a remote repository
+
+  ```bash
+  git push <remote> <branch>
+
+  # Example:
+  git push origin master
+  ```
+
+## Branching and Merging
+
+1. To view branches
+
+  ```bash
+  git branch
+  ```
+
+2. To create a new branch
+
+  ```bash
+  git branch <branch name>
+
+  # Or to create and switch to a new branch
+  git checkout -b <branch name>
+  ```
+
+3. To switch branches
+
+  ```bash
+  git checkout <branch name>
+  ```
+
+4. To merge a branch into the current branch
+
+  ```bash
+  git merge <branch name>
+  ```
+
 ### Troubleshooting
 
 If something goes wrong, use `git status` and `git log` to see if you can figure out what happened.
