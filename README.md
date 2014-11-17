@@ -65,6 +65,20 @@ Agree on who is partner #1 and partner #2
 
 7. Enter in a repository name and do **not** check the box that says initialize with README.
 
+8. Copy the https url from github
+
+  ![click the copy button](http://i.imgur.com/O33PcIU.png)
+
+8. Add this as a remote and push your commits
+
+  ```bash
+  git remote add origin <url from github>
+  git push -u origin master
+  ```
+
+  > Notice that these are the exact commands from github!
+  > Ask your TA about the -u if you're curious
+
 8. Go to the repository settings
   ![settings location](http://i.imgur.com/qJAv62R.png)
 
@@ -116,7 +130,7 @@ By the time you're done, you'll have two new operators, modulus division and exp
 
     * If you are the first partner to finish your implementation, move on to step 5.
 
-5. Do a git push to publish your changes to Github so your partner can see them. Run `$ git push origin master`
+5. Do a git push to publish your changes to Github so your partner can see them. Run `$ git push`
 
     > When done with this part, wait for your partner to finish his/her implementation.
 
@@ -137,7 +151,7 @@ This is because both of you implemented the __*mult(a, b)*__ function. Let's fix
 
 4. When you are done editing, git add the file and commit.
 
-5. Run `$ git push origin master` to publish your changes to Github so your partner can pull them down.
+5. Run `$ git push` to publish your changes to Github so your partner can pull them down.
 
 6. Your partner should now run `$ git pull origin master` on his/her computer to see that you fixed the conflict.
 
