@@ -19,22 +19,20 @@ def add(a, b):
 # a -- minuend
 # b -- subtrahend
 def sub(a, b):
-    # TODO -- implement subtraction here
-    return 0
+    return a - b
 
 # Multiply function
 # a -- multiplicand
 # b -- multiplier
 def mult(a, b):
-    # TODO -- implement multiplication here
-    return 0
+    return a * b
 
 # Divide function
 # a -- dividend
 # b -- divisor
 def div(a, b):
-    # TODO -- implement division here
-    return 0
+    return a / b
+
 
 # -------------------------------------------------------- #
 
