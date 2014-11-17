@@ -65,7 +65,7 @@ Agree on who is partner #1 and partner #2
 
 7. Enter in a repository name and do **not** check the box that says initialize with README.
 
-8. Copy the https url from github
+8. Copy the http url from github
 
   ![click the copy button](http://i.imgur.com/O33PcIU.png)
 
@@ -77,12 +77,13 @@ Agree on who is partner #1 and partner #2
   ```
 
   > Notice that these are the exact commands from github!
-  > Ask your TA about the -u if you're curious
+  > Ask your TA about the `-u` if you're curious
 
 8. Go to the repository settings
   ![settings location](http://i.imgur.com/qJAv62R.png)
 
 9. Add your partner as a collaborator.
+  ![collab](http://i.imgur.com/t2pmeId.png)
 
 
 ## Move to Partner #2's computer
@@ -97,6 +98,8 @@ For the rest of this lab, pay attention to which section you're supposed to do.
 
 
 ## **Both** partners independently
+Go back to your own computer and do the steps below.
+
 ### Run the Script
 
 To run the calculator script, run the command `$ python calc.py`. The program will prompt you to enter input. Notice that there are 4 functions defined, `+, -, * and /`
@@ -109,28 +112,39 @@ By the time you're done, you'll have two new operators, modulus division and exp
 > Be sure to test your code to make sure your functions work the way that they should.
 
 
-1. Open up `calc.py` in your text editor (`$ pluma calc.py &`)
+1\. Open up `calc.py` in your text editor (`$ pluma calc.py &`)
 
 ### Partner 1 only
-2. Implement modulus division operator (%)
+2\. Implement modulus division operator (%)
 
-  > hint: what you're doing is very very similar to the div operator, but instead of using `/` to do regular division, you can use the `%` operator to do modulus division.
+a) Define a method under the division method that will take two arguments (`a` and `b`)and return `a` modulo `b`.
+
+b) Add a `elif` (else if) alongside the others that will check if the operator (`op`) is equal to the percent sign ("%")
+
+> hint: what you're doing is very very similar to the div operator, but instead of using `/` to do regular division, you can use the `%` operator to do modulus division.
 
 ### Partner 2 only
-2. Implement the exponent operator (**)
+2\. Implement the exponent operator (`**`)
+
+a) Define a method under the division method that will take two arguments (`a` and `b`)and return `a` to the b power. The syntax in python is `a ** b`.
+
+b) Add a `elif` (else if) alongside the others that will check if the operator (`op`) is equal to the exponent symbol (`**`)
+
   > hint: what you're doing is very very similar to the multiplication operator, but instead of using `*`, you can use the `**` operator.
 
-3. When you are done with your implementation, commit your changes
+### Both Independently
 
-    > Remember `git add` and `git commit`. Be sure to check `git status` and `git log` afterward to make sure you successfully committed the changes.
+3\. When you are done with your implementation, commit your changes
 
-4. Do a git pull to check for any changes. Run `$ git pull origin master`
+> Remember `git add` and `git commit`. Be sure to check `git status` and `git log` afterward to make sure you successfully committed the changes.
 
-    * If you are the second partner to finish your implementation, you will get a merge conflict. Don't panic. Skip to the next section and fix it together with your partner.
+4\. Do a git pull to check for any changes. Run `$ git pull`
 
-    * If you are the first partner to finish your implementation, move on to step 5.
+* If you are the second partner to finish your implementation, you will get a merge conflict. Don't panic. Skip to the next section (merge conflict) and fix it together with your partner.
 
-5. Do a git push to publish your changes to Github so your partner can see them. Run `$ git push`
+* If you are the first partner to finish your implementation, move on to step 5.
+
+5\. Do a git push to publish your changes to Github so your partner can see them. Run `$ git push`
 
     > When done with this part, wait for your partner to finish his/her implementation.
 
@@ -138,31 +152,30 @@ By the time you're done, you'll have two new operators, modulus division and exp
 #### Do WITH partner on ONE computer
 
 If you were the second partner to finish your implementation, you will have gotten merge conflict when you tried to pull.
-This is because both of you implemented the __*mult(a, b)*__ function. Let's fix this conflict.
+This is because you changed the same lines, but did different things (you each implemented different functions)
 
 1. Open up `calc.py` in your text editor (`$ pluma calc.py &`)
 
 2. Look for the pattern of `<<<<<<<<` and `>>>>>>>>` in the code. This is where the merge conflict exists.
 
-    > Notice how your changes are marked by HEAD and your partner's changes are marked by a commit hash from the remote.
+  > Notice how your changes are marked by HEAD and your partner's changes are marked by a commit hash from the remote.
 
-3. Edit the code to be implemented how you want it. You can either keep your implementation, or your partner's implementation
-   or mix the two. It's your choice how you want to fix the conflict. Do this with your partner.
+3. Edit the code to include both functions. Be sure to remove the merge markers (`<<<<<<<<` and `>>>>>>>>`), this isn't valid python and shouldn't be left in the file.
 
-4. When you are done editing, git add the file and commit.
+  ** There could be more than one merge conflict **
+
+4. When you are done editing, git `add` the file and commit.
 
 5. Run `$ git push` to publish your changes to Github so your partner can pull them down.
 
-6. Your partner should now run `$ git pull origin master` on his/her computer to see that you fixed the conflict.
+6. Your partner should now run `$ git pull` on his/her computer to see that you fixed the conflict.
 
-Now both of you should be able to run `$ python calc.py` on your separate computers and have a fully functioning
-calculator CLI.
+Now both of you should be able to run `$ python calc.py` on your separate computers and have a fully functioning calculator CLI.
 
 ### Grading
 
 * Run `$ git log -3` and show it to your TA
-
-* Show your TA the open source project that you forked.
+* Ask any questions that you have
 
 ### Bonus: Setting up SSH keys
 
