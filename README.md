@@ -58,6 +58,11 @@ Agree on who is partner #1 and partner #2
   git add <filename>
   ```
 
+5. Commit this change
+  ```bash
+  git commit -m 'initial commit'
+  ```
+
 5. Log in to github (upper right hand corner of this page)
 
 6. Create a new repository
