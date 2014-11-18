@@ -95,6 +95,7 @@ Agree on who is partner #1 and partner #2
 Partner 2 needs a copy of this repo. If you remember from lecture, this is exactly what `clone` does.
 
   ```bash
+  cd ~
   git clone <remote url>
   cd <repo name>
   ```
@@ -131,7 +132,7 @@ b) Add a `elif` (else if) alongside the others that will check if the operator (
 ### Partner 2 only
 2\. Implement the exponent operator (`**`)
 
-a) Define a method under the division method that will take two arguments (`a` and `b`)and return `a` to the b power. The syntax in python is `a ** b`.
+a) Define a method named `exp` under the division method that will take two arguments (`a` and `b`)and return `a` to the `b` power. The syntax in python for a to the b is `a ** b`.
 
 b) Add a `elif` (else if) alongside the others that will check if the operator (`op`) is equal to the exponent symbol (`**`)
 
@@ -151,7 +152,7 @@ b) Add a `elif` (else if) alongside the others that will check if the operator (
 
 5\. Do a git push to publish your changes to Github so your partner can see them. Run `$ git push`
 
-    > When done with this part, wait for your partner to finish his/her implementation.
+  > When done with this part, wait for your partner to finish his/her implementation.
 
 ### Merge conflict
 #### Do WITH partner on ONE computer
@@ -167,7 +168,7 @@ This is because you changed the same lines, but did different things (you each i
 
 3. Edit the code to include both functions. Be sure to remove the merge markers (`<<<<<<<<` and `>>>>>>>>`), this isn't valid python and shouldn't be left in the file.
 
-  _*There could be more than one merge conflict*_
+4. Scan through the rest of the file to see if there are any other merge conflicts.
 
 4. When you are done editing, git `add` the file and commit.
 
