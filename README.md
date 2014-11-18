@@ -1,7 +1,7 @@
 # CS 190 Lab 7 - Basics of Git Part 2: Remotes and Github
 
 The purpose of this lab is to become comfortable and fluent with projects using Github.
-By the end of the lab, you should know how to create and fork repos, add collaborators, clone, push, pull,
+By the end of the lab, you should know how to create repos, add collaborators, clone, push, pull,
 and fix minor merge conflicts.
 
 __For quick reference on the git commands we covered, see the cheat sheet [here] (https://github.com/PurdueCS190/lab7/blob/master/cheat_sheet.md)__
@@ -162,7 +162,7 @@ This is because you changed the same lines, but did different things (you each i
 
 3. Edit the code to include both functions. Be sure to remove the merge markers (`<<<<<<<<` and `>>>>>>>>`), this isn't valid python and shouldn't be left in the file.
 
-  ** There could be more than one merge conflict **
+  _*There could be more than one merge conflict*_
 
 4. When you are done editing, git `add` the file and commit.
 
